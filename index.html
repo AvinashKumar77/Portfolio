@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My One-Page Website</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+            />
+        <style>
+      /* Customize the appearance of the website */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        padding-top: 70px;
+      }
+      /* Style the navbar */
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand {
+        color: #fff;
+      }
+      .navbar-nav .nav-link {
+        color: #fff;
+      }
+      /* Style the sections */
+      .section {
+        padding: 80px 0;
+      }
+      .section-qualification {
+        background-color: #fff;
+      }
+      .section-skills {
+        background-color: #f8f9fa;
+      }
+      .section-contact {
+        background-color: #fff;
+      }
+      .section-about {
+        background-color: #f8f9fa;
+      }
+      /* Style the toggle button */
+      .toggle-label {
+        margin-right: 10px;
+      }
+      .toggle-label input[type="checkbox"] {
+        display: none;
+      }
+      .toggle-label input[type="checkbox"] + .toggle-button {
+        width: 40px;
+        height: 20px;
+        background-color: #ccc;
+        display: inline-block;
+        position: relative;
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+      .toggle-label input[type="checkbox"]:checked + .toggle-button {
+        background-color: #007bff;
+      }
+      .toggle-label input[type="checkbox"] + .toggle-button:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: all 0.3s;
+      }
+      .toggle-label input[type="checkbox"]:checked + .toggle-button:before {
+        transform: translateX(20px);
+      }
+      /* Style the dark mode */
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      body.dark-mode .navbar {
+        background-color: #1f1f1f;
+      }
+      body.dark-mode .navbar-brand {
+        color: #fff;
+      }
+      body.dark-mode .navbar-nav .nav-link {
+        color: #fff;
+      }
+      body.dark-mode .section-qualification {
+        background-color: #1f1f1f;
+      }
+      body.dark-mode .section-skills {
+        background-color: #333;
+      }
+      body.dark-mode .section-contact {
+        background-color: #1f1f1f;
+      }
+      body.dark-mode .section-about {
+        background-color: #333;
+      }
+
+
+        /* Set the hamburger menu to display for screen widths less than 992px (the breakpoint for "lg" in Bootstrap) */
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      display: none;
+    }
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-collapse {
+      background-color: #f8f9fa; /* Set the background color of the collapsed menu */
+    }
+  }
+    </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="#">portfolio </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qualification">Qualification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dark/Light mode toggle button -->
+           
+        </nav>
+        <label class="toggle-label">
+            <input type="checkbox" id="toggle-button" />
+            <span class="toggle-button"></span>
+            Dark Mode
+        </label>
+        <section class="container" id="">
+            <div class="row">
+            <div class="col-sm-4">
+                <h2>Qualification</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-8">
+                <h2>Qualification</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+        </div>
+        </section>
+
+        <!-- Qualification section -->
+        <section class="section section-qualification" id="qualification">
+            <div class="container">
+                <h2>Qualification</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section class="section section-skills" id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section section-contact" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section section-about" id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec odio. Praesent libero.</p>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+          // Toggle between dark and light mode
+          $("#toggle-button").change(function () {
+            $("body").toggleClass("dark-mode");
+          });
+
+
+
+        </script>
+    </body>
+</html>
